@@ -1,0 +1,9 @@
+= elk-sandbox
+
+
+== References
+
+. https://logz.io/blog/docker-logging/
+. https://logz.io/blog/shipping-logs-filebeat/
+. https://logz.io/blog/5-logstash-filter-plugins/
+. 

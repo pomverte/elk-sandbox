@@ -1,0 +1,7 @@
+---
+# /etc/filebeat/filebeat.yml
+filebeat:
+  prospectors:
+  - input_type: log
+    paths:
+      - /var/lib/docker/containers/*/*-json.log

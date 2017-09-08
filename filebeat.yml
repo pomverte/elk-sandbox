@@ -1,8 +1,15 @@
 ---
 # /etc/filebeat/filebeat.yml
 filebeat.prospectors:
-- input_type: log
-  paths:
-    - /var/lib/docker/containers/*/*-json.log
+  - input_type: log
+    paths:
+      - /var/lib/docker/containers/*/*-json.log
+    json:
+      keys_under_root: true
+      #add_error_key: true
+      message_key: log
+    tags:
+      - "json"
+      - "docker"
 output.logstash:
   - hosts: ["127.0.0.1:5044"]

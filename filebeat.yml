@@ -5,3 +5,6 @@ filebeat:
   - input_type: log
     paths:
       - /var/lib/docker/containers/*/*-json.log
+output:
+  logstash:
+    hosts: ["127.0.0.1:5044"]

@@ -1,5 +1,14 @@
 = elk-sandbox
 
+== Elasticsearch
+
+docker pull docker.elastic.co/elasticsearch/elasticsearch:5.5.2
+
+== Logstash
+
+== Kibana
+
+== FileBeat
 
 == References
 

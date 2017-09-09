@@ -2,7 +2,8 @@
 
 == Elasticsearch
 
-docker pull docker.elastic.co/elasticsearch/elasticsearch:5.5.2
+IMPORTANT: `sysctl -w vm.max_map_count=262144`
+https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-cli-run-prod-mode
 
 == Logstash
 
@@ -15,4 +16,3 @@ docker pull docker.elastic.co/elasticsearch/elasticsearch:5.5.2
 . https://logz.io/blog/docker-logging/
 . https://logz.io/blog/shipping-logs-filebeat/
 . https://logz.io/blog/5-logstash-filter-plugins/
-. 

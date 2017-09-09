@@ -8,5 +8,6 @@ services:
     environment:
       http.host: 0.0.0.0
       transport.host: 127.0.0.1
+      cluster.name: es-cluster
     ports:
       - "9200:9200"

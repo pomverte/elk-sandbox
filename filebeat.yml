@@ -1,5 +1,6 @@
 ---
 # /etc/filebeat/filebeat.yml
+# /usr/share/filebeat/filebeat.yml
 filebeat.prospectors:
   - input_type: log
     paths:

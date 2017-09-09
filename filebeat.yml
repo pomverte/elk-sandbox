@@ -1,0 +1,25 @@
+---
+filebeat.prospectors:
+  - input_type: log
+    paths:
+#      - /var/lib/docker/containers/*/*-json.log
+      - /a8fdb8d456918552b85ce1d24a8fb3cc11fe5df8bd4b115-json.log
+    json:
+      keys_under_root: true
+      #add_error_key: true
+      message_key: log
+      # The regexp Pattern that has to be matched. The example pattern matches all lines starting with [
+      #multiline.pattern: ^\[
+    tags:
+      - "json"
+      - "docker"
+
+output.logstash:
+  hosts: ["192.168.99.100:5044"]
+#output.elasticsearch:
+#  hosts: ["192.168.99.100:9200"]
+#  username: elastic
+#  password: changeme
+  template.name: "filebeat"
+  template.path: "filebeat.template.json"
+  template.overwrite: false

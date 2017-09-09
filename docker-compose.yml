@@ -1,0 +1,47 @@
+---
+version: '3'
+services:
+
+  elasticsearch_service:
+    image: docker.elastic.co/elasticsearch/elasticsearch:5.5.2
+    container_name: elasticsearch
+    environment:
+      http.host: 0.0.0.0
+      transport.host: 127.0.0.1
+      cluster.name: es-cluster
+      node.name: ${HOSTNAME}
+      ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+#    volumes:
+#      - "/elk/data:/usr/share/elasticsearch/data"
+
+  kibana_service:
+    image: docker.elastic.co/kibana/kibana:5.5.2
+    container_name: kibana
+    environment:
+#      SERVER_NAME: kibana.example.org
+      ELASTICSEARCH_URL: http://192.168.99.100:9200
+    ports:
+      - "5601:5601"
+
+  logstash_service:
+    image: docker.elastic.co/logstash/logstash:5.5.2
+    container_name: logstash
+    environment:
+      LS_JAVA_OPTS: "-Xms512m -Xmx512m"
+    ports:
+      - "5044:5044"
+      - "9600:9600"
+    volumes:
+      - "/elk/logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro"
+
+  filebeat_service:
+    image: docker.elastic.co/beats/filebeat:5.5.2
+    container_name: filebeat
+    # https://stackoverflow.com/a/44962871/6681585
+    entrypoint: "filebeat -e -strict.perms=false"
+    volumes:
+      - "/elk/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro"
+      - "/elk/a8fdb8d456918552b85ce1d24a8fb3cc11fe5df8bd4b115-json.log:/a8fdb8d456918552b85ce1d24a8fb3cc11fe5df8bd4b115-json.log:ro"

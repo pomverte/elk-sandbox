@@ -1,0 +1,26 @@
+{"log":"\n","stream":"stdout","time":"2017-09-09T18:57:38.48887019Z"}
+{"log":"  .   ____          _            __ _ _\n","stream":"stdout","time":"2017-09-09T18:57:38.489140309Z"}
+{"log":" /\\\\ / ___'_ __ _ _(_)_ __  __ _ \\ \\ \\ \\\n","stream":"stdout","time":"2017-09-09T18:57:38.489148773Z"}
+{"log":"( ( )\\___ | '_ | '_| | '_ \\/ _` | \\ \\ \\ \\\n","stream":"stdout","time":"2017-09-09T18:57:38.489151629Z"}
+{"log":" \\\\/  ___)| |_)| | | | | || (_| |  ) ) ) )\n","stream":"stdout","time":"2017-09-09T18:57:38.489154278Z"}
+{"log":"  '  |____| .__|_| |_|_| |_\\__, | / / / /\n","stream":"stdout","time":"2017-09-09T18:57:38.489156498Z"}
+{"log":" =========|_|==============|___/=/_/_/_/\n","stream":"stdout","time":"2017-09-09T18:57:38.489158691Z"}
+{"log":" :: Spring Boot ::        (v1.5.6.RELEASE)\n","stream":"stdout","time":"2017-09-09T18:57:38.500545275Z"}
+{"log":"\n","stream":"stdout","time":"2017-09-09T18:57:38.500564394Z"}
+{"log":"2017-09-09 18:57:39.225  INFO 1 --- [           main] com.example.logthis.LogThisApplication   : Starting LogThisApplication v0.0.1-SNAPSHOT on 1a3de447a329 with PID 1 (/log-this.jar started by root in /)\n","stream":"stdout","time":"2017-09-09T18:57:39.23817313Z"}
+{"log":"2017-09-09 18:57:39.237  INFO 1 --- [           main] com.example.logthis.LogThisApplication   : No active profile set, falling back to default profiles: default\n","stream":"stdout","time":"2017-09-09T18:57:39.238197334Z"}
+{"log":"2017-09-09 18:57:39.521  INFO 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cdf8d8a: startup date [Sat Sep 09 18:57:39 GMT 2017]; root of context hierarchy\n","stream":"stdout","time":"2017-09-09T18:57:39.522335475Z"}
+{"log":"2017-09-09 18:57:47.583  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)\n","stream":"stdout","time":"2017-09-09T18:57:47.58355471Z"}
+{"log":"2017-09-09 18:57:47.682  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]\n","stream":"stdout","time":"2017-09-09T18:57:47.68337892Z"}
+{"log":"2017-09-09 18:57:47.691  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16\n","stream":"stdout","time":"2017-09-09T18:57:47.692316311Z"}
+{"log":"2017-09-09 18:57:48.253  INFO 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext\n","stream":"stdout","time":"2017-09-09T18:57:48.25350225Z"}
+{"log":"2017-09-09 18:57:48.253  INFO 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8736 ms\n","stream":"stdout","time":"2017-09-09T18:57:48.25354116Z"}
+{"log":"2017-09-09 18:57:48.836  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]\n","stream":"stdout","time":"2017-09-09T18:57:48.836935948Z"}
+{"log":"2017-09-09 18:57:48.846  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]\n","stream":"stdout","time":"2017-09-09T18:57:48.846462Z"}
+{"log":"2017-09-09 18:57:48.846  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]\n","stream":"stdout","time":"2017-09-09T18:57:48.847851728Z"}
+{"log":"2017-09-09 18:57:48.846  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]\n","stream":"stdout","time":"2017-09-09T18:57:48.84786198Z"}
+{"log":"2017-09-09 18:57:48.846  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]\n","stream":"stdout","time":"2017-09-09T18:57:48.847865177Z"}
+{"log":"2017-09-09 18:57:48.846  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]\n","stream":"stdout","time":"2017-09-09T18:57:48.847867668Z"}
+{"log":"2017-09-09 18:57:48.847  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]\n","stream":"stdout","time":"2017-09-09T18:57:48.84787005Z"}
+{"log":"2017-09-09 18:57:48.847  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]\n","stream":"stdout","time":"2017-09-09T18:57:48.847872369Z"}
+{"log":"2017-09-09 19:57:48.847  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]\n","stream":"stdout","time":"2017-09-09T18:57:48.847872369Z"}

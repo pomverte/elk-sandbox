@@ -10,11 +10,19 @@
 | Kibana        | kibana/changeme  | http://192.168.99.100:5601/status
 |===
 
+----
+$ docker-machine ssh
+$ sudo ls -lh /var/lib/docker/containers/1a3de447a3295b337a8fdb8d456918552b85ce1d24a8fb3cc11fe5df8bd4b115/1a3de447a3295b337a8fdb8d456918552b85ce1d24a8fb3cc11fe5df8bd4b115-json.log
+----
+
+
 == Installation
 
 https://www.elastic.co/guide/en/elastic-stack/current/installing-elastic-stack.html
 
 === Elasticsearch
+
+curl -H 'Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==' 'http://192.168.99.100:9200/_cat/indices?v'
 
 IMPORTANT: `sysctl -w vm.max_map_count=262144`
 https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-cli-run-prod-mode
@@ -26,6 +34,8 @@ https://www.elastic.co/guide/en/kibana/5.5/docker.html
 === Logstash
 
 === FileBeat
+
+https://www.elastic.co/guide/en/beats/filebeat/5.5/filebeat-installation.html#docker
 
 === X-Pack security
 

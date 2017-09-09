@@ -9,5 +9,13 @@ services:
       http.host: 0.0.0.0
       transport.host: 127.0.0.1
       cluster.name: es-cluster
+      node.name: ${HOSTNAME}
+      ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+#      ES_JAVA_OPTS: "-Xms16g -Xmx16g"
+#      network.host: 192.168.99.100
+#      bootstrap.memory_lock: "true"
     ports:
       - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - "/elk/data:/usr/share/elasticsearch/data"

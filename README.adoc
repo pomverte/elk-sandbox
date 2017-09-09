@@ -1,15 +1,37 @@
 = elk-sandbox
 
-== Elasticsearch
+
+.Access
+[align="center",frame="topbot"]
+|===
+| Service       | Credentials      | URL
+
+| Elasticsearch | elastic/changeme | http://192.168.99.100:9200
+| Kibana        | kibana/changeme  | http://192.168.99.100:5601/status
+|===
+
+== Installation
+
+https://www.elastic.co/guide/en/elastic-stack/current/installing-elastic-stack.html
+
+=== Elasticsearch
 
 IMPORTANT: `sysctl -w vm.max_map_count=262144`
 https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-cli-run-prod-mode
 
-== Logstash
+=== Kibana
 
-== Kibana
+https://www.elastic.co/guide/en/kibana/5.5/docker.html
 
-== FileBeat
+=== Logstash
+
+=== FileBeat
+
+=== X-Pack security
+
+IMPORTANT: change password !
+https://www.elastic.co/guide/en/x-pack/current/security-getting-started.html#security-getting-started
+
 
 == References
 

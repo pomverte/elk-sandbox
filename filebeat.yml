@@ -14,12 +14,12 @@ filebeat.prospectors:
       - "json"
       - "docker"
 
-output.logstash:
-  hosts: ["192.168.99.100:5044"]
-#output.elasticsearch:
-#  hosts: ["192.168.99.100:9200"]
-#  username: elastic
-#  password: changeme
-  template.name: "filebeat"
-  template.path: "filebeat.template.json"
-  template.overwrite: false
+output:
+  logstash:
+    hosts: ["192.168.99.100:5044"]
+    template.name: "filebeat"
+    template.path: "filebeat.template.json"
+    template.overwrite: false
+  file:
+    path: "/elk/tmp/filebeat"
+    filename: filebeat

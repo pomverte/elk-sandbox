@@ -46,5 +46,6 @@ services:
     # https://stackoverflow.com/a/44962871/6681585
     entrypoint: "filebeat -e -strict.perms=false"
     volumes:
+      - "/elk/filebeat:/tmp/filebeat"
       - "/elk/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro"
       - "/elk/a8fdb8d456918552b85ce1d24a8fb3cc11fe5df8bd4b115-json.log:/a8fdb8d456918552b85ce1d24a8fb3cc11fe5df8bd4b115-json.log:ro"

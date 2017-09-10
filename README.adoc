@@ -28,6 +28,29 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#dock
 IMPORTANT: X-Pack security : change password !
 https://www.elastic.co/guide/en/x-pack/current/security-getting-started.html#security-getting-started
 
+== Output
+
+.Filebeat
+[source,json]
+----
+{
+	"@timestamp": "2017-09-10T20:52:38.992Z",
+	"beat": {
+		"hostname": "084b03e69c9a",
+		"name": "084b03e69c9a",
+		"version": "5.5.2"
+	},
+	"input_type": "log",
+	"log": "2017-09-09 18:57:39.225  INFO 1 --- [           main] com.example.logthis.LogThisApplication   : Starting LogThisApplication v0.0.1-SNAPSHOT on 1a3de447a329 with PID 1 (/log-this.jar started by root in /)",
+	"offset": 1212,
+	"source": "/a8fdb8d456918552b85ce1d24a8fb3cc11fe5df8bd4b115-json.log",
+	"stream": "stdout",
+	"tags": ["json", "docker"],
+	"time": "2017-09-09T18:57:39.23817313Z",
+	"type": "log"
+}
+----
+
 == References
 
 . https://logz.io/blog/docker-logging/

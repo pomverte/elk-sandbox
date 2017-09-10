@@ -18,6 +18,7 @@
 . https://www.elastic.co/guide/en/logstash/current/docker.html
 . https://www.elastic.co/guide/en/beats/filebeat/5.5/filebeat-installation.html#docker
 
+.Elasticsearch indexes
 ----
 $ curl -H 'Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==' 'http://192.168.99.100:9200/_cat/indices?v'
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current

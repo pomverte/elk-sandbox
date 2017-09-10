@@ -18,7 +18,21 @@
 . https://www.elastic.co/guide/en/logstash/current/docker.html
 . https://www.elastic.co/guide/en/beats/filebeat/5.5/filebeat-installation.html#docker
 
- $ curl -H 'Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==' 'http://192.168.99.100:9200/_cat/indices?v'
+----
+$ curl -H 'Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==' 'http://192.168.99.100:9200/_cat/indices?v'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1290  100  1290    0     0  40312      0 --:--:-- --:--:-- --:--:-- 40312health status index                             uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+yellow open   .kibana                           jaMYDnQGShaoyCefOkGKuQ   1   1          1            0      3.2kb          3.2kb
+yellow open   .triggered_watches                60BS9yHeR9mNZyrmD40yVA   1   1          0            0       162b           162b
+yellow open   .watcher-history-3-2017.09.10     MzHoQ8lSQ8KA7amnrUzltw   1   1         35            0       82kb           82kb
+yellow open   .monitoring-logstash-6-2017.09.10 TdrJcGyuTA-pko2btx1OZg   1   1         46            0    159.3kb        159.3kb
+yellow open   .monitoring-alerts-6              NB-ZQ1gKSxKE3IqrJtQmYw   1   1          1            0      6.2kb          6.2kb
+yellow open   filebeat-2017.09.10               3Z5QqRHkSce1JbOkElVCyg   5   1         26            0     70.8kb         70.8kb
+yellow open   .monitoring-kibana-6-2017.09.10   PR_ZMcunS7K0J23gQCzjLg   1   1         46            0    145.3kb        145.3kb
+yellow open   .monitoring-es-6-2017.09.10       tcWopZtKTkuZa8817IYb1w   1   1        684          104    646.6kb        646.6kb
+yellow open   .watches                          KH6ctwxYQTOmyu_AvPcblg   1   1          4            0     19.8kb         19.8kb
+----
 
 === Production mode
 

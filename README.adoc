@@ -23,7 +23,8 @@
 $ curl -H 'Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==' 'http://192.168.99.100:9200/_cat/indices?v'
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100  1290  100  1290    0     0  40312      0 --:--:-- --:--:-- --:--:-- 40312health status index                             uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+100  1290  100  1290    0     0  40312      0 --:--:-- --:--:-- --:--:-- 40312
+health status index                             uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 yellow open   .kibana                           jaMYDnQGShaoyCefOkGKuQ   1   1          1            0      3.2kb          3.2kb
 yellow open   .triggered_watches                60BS9yHeR9mNZyrmD40yVA   1   1          0            0       162b           162b
 yellow open   .watcher-history-3-2017.09.10     MzHoQ8lSQ8KA7amnrUzltw   1   1         35            0       82kb           82kb

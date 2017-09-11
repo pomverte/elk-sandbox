@@ -36,6 +36,10 @@ yellow open   .monitoring-es-6-2017.09.10       tcWopZtKTkuZa8817IYb1w   1   1  
 yellow open   .watches                          KH6ctwxYQTOmyu_AvPcblg   1   1          4            0     19.8kb         19.8kb
 ----
 
+.Pretty Index
+----
+curl -H 'Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==' 'http://192.168.99.100:9200/filebeat-2017.09.10?pretty'
+----
 === Production mode
 
 IMPORTANT: `sysctl -w vm.max_map_count=262144`
